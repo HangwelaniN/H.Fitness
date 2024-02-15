@@ -1,3 +1,11 @@
 .App {
-  text-align: center;
+  color: white;
 }
+
+.wrap1{
+  background-image: url(./imgs/pic8.jpg);
+   background-size: cover;
+
+}
+
+
