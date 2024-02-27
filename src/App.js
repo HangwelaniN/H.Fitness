@@ -57,9 +57,7 @@ function Section({ children }) {
       </Navbar>
     
       <Section >
-
         <h6 className="fs-5">Welcome To HangwelaniN Fitness</h6>
-
         <p>Your fitness journey starts here</p>
         <div className='box'>
         <p1>
@@ -131,7 +129,7 @@ function Section({ children }) {
       <Row>
         <Col >
         <div className="pic">
-        <img src={require('./imgs/pic11.jpg')} alt='Group classes' className='pics' />
+        <img src={require('./imgs/pic11.jpg')} alt='Group workout' className='pics' />
         <h4>User Registration</h4>
         <p3>Our user registration process is simple and efficient, 
             allowing you to quickly create an account and get started 
