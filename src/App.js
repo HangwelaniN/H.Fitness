@@ -5,14 +5,15 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { faXTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faYoutube } from '@fortawesome/free-brands-svg-icons'
-import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
 import Button from 'react-bootstrap/Button';
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+
 
 
 
@@ -40,18 +41,23 @@ function Section({ children }) {
    export default function App() {
   return (
       <div className='App'>
-            <Navbar bg="light" data-bs-theme="light" >
+       <Navbar expand="lg" bg="light" data-bs-theme="light">
         <Container>
-          <Navbar.Brand href="#home"><FontAwesomeIcon icon={faDumbbell} /> HangwelaniN <div className='px-4'>Fitness</div></Navbar.Brand>
-          <Nav className='d-flex justify-content' >
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Services</Nav.Link>
-            <Nav.Link href="#pricing">About us</Nav.Link>
-            <Nav.Link href="#features">contact</Nav.Link>
-          </Nav>
+          <Navbar.Brand href="#home"><FontAwesomeIcon icon={faDumbbell} />  HangwelaniN <div className='px-4'>Fitness</div></Navbar.Brand>
+          <Navbar.Toggle />
+          <Navbar.Collapse >
+          <Nav className="me-auto flex">
+            <Nav.Link href="#home"  >Home</Nav.Link>
+            <Nav.Link href="#features" >AboutUs</Nav.Link>
+            <Nav.Link href="#pricing">Pricing</Nav.Link>
+            <Nav.Link href="#pricing">Contact</Nav.Link>
+            </Nav>
+          </Navbar.Collapse> 
         </Container>
       </Navbar>
+    
       <Section >
+
         <h6 className="fs-5">Welcome To HangwelaniN Fitness</h6>
 
         <p>Your fitness journey starts here</p>

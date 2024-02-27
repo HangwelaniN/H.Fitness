@@ -6,6 +6,10 @@
 h6{
   font-family: Sans-serif;
 }
+.flex{
+  display: flex;
+  margin-left: 85%;
+}
 p{
   font-size: 50px;
   font-weight: 600;
