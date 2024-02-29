@@ -13,6 +13,13 @@ import { useInView } from "framer-motion";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
+import About from './About';
 
 
 
@@ -40,6 +47,7 @@ function Section({ children }) {
 
    export default function App() {
   return (
+    <BrowserRouter>
       <div className='App'>
        <Navbar expand="lg" bg="light" data-bs-theme="light">
         <Container>
@@ -47,15 +55,14 @@ function Section({ children }) {
           <Navbar.Toggle />
           <Navbar.Collapse >
           <Nav className="me-auto flex">
-            <Nav.Link href="#home"  >Home</Nav.Link>
-            <Nav.Link href="#features" >AboutUs</Nav.Link>
+            <Nav.Link as={Link} to="/"  >Home</Nav.Link>
+            <Nav.Link as={Link} to="/About" >AboutUs</Nav.Link>
             <Nav.Link href="#pricing">Pricing</Nav.Link>
             <Nav.Link href="#pricing">Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse> 
         </Container>
       </Navbar>
-    
       <Section >
         <h6 className="fs-5">Welcome To HangwelaniN Fitness</h6>
         <p>Your fitness journey starts here</p>
@@ -212,6 +219,9 @@ function Section({ children }) {
 
           </p1>
         </div>
+        <Routes>
+          <Route path="/About" element={<About />} />
+        </Routes>
         <div className="footer pt-5">
         <Container>
         <Row>
@@ -268,6 +278,7 @@ function Section({ children }) {
     </Container>
         </div>
     </div>
+    </BrowserRouter>
    
   );
 }
