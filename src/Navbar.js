@@ -20,10 +20,10 @@ export default function Navbar() {
               <NavLink to="/"  style={activeState}>Home</NavLink>
             </li>
             <li>
-              <NavLink to="Pricing" style={activeState}>Pricing</NavLink>
+              <NavLink to="About" style={activeState}>About us</NavLink>
             </li>
             <li>
-              <NavLink to="about" style={activeState}>About</NavLink>
+              <NavLink to="Pricing" style={activeState}>Pricing</NavLink>
             </li>
           </ul>
         </nav>
