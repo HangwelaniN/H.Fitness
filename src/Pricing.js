@@ -4,6 +4,8 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import "./Pricing.css";
+import  Form  from "./Form";
+import Footer from "./Footer";
 
 
     export default function Pricing() {
@@ -74,7 +76,8 @@ import "./Pricing.css";
         </Col>
       </Row>
     </Container>
-      <a href="<Call />">join</a>
+    <Form />
+    <Footer />
        </div>
     )
 };

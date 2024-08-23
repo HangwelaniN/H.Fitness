@@ -12,16 +12,16 @@
     font-size: 60px;
     font-weight: 600;
     max-width: 700px;
-    margin: 0 0 0 300px;
+    margin: 0 0 50px 300px;
 }
 .gyms{
     font-size: 28px;
-    padding: 20px;
+    padding: 30px;
     max-width: 700px;
-    margin: 20px 0 30px 250px;
     border: 2px solid  rgb(139, 136, 136); 
     box-shadow: 5px 5px 8px rgb(196, 192, 192);
     border-radius: 10px;
+    margin: 5rem 10rem;
 }
 .trainer{
     border: 2px solid  rgb(139, 136, 136); 
@@ -46,6 +46,62 @@
     padding: 20px;
 }
 .list{
-  list-style-type: disc;
+  list-style: disc;
 
+}
+.use{
+    padding: 0.6rem 25rem;
+    border-radius: 7px;
+    font-size: 20px; 
+}
+.bound{
+    padding: 1rem;
+}
+.used{
+    margin-top: 2rem;
+    padding: 0.5rem 5rem;
+    border-radius: 5rem;
+}
+@media (max-width: 600px) {
+    .works{
+        font-size: 45px;
+        font-weight: 400;
+        max-width: 700px;
+        margin: 0 50px 40px ;
+    }
+    .gyms{
+        font-size: 28px;
+        padding: 30px;
+        max-width: 700px;
+        border: 2px solid  rgb(139, 136, 136); 
+        box-shadow: 5px 5px 8px rgb(196, 192, 192);
+        border-radius: 10px;
+        margin: 5rem 10rem;
+    }
+    .gyms{
+        font-size: 20px;
+        padding: 35px;
+        max-width: 700px;
+        border: 2px solid  rgb(139, 136, 136); 
+        box-shadow: 5px 5px 8px rgb(196, 192, 192);
+        border-radius: 10px;
+        margin: 3rem 5rem;
+    }
+    .trainer{
+        border: 2px solid  rgb(139, 136, 136); 
+        box-shadow: 5px 5px 8px rgb(196, 192, 192); 
+        border-radius: 10px;
+        margin: 50px; 
+        padding: 10px;
+    }
+    .use{
+        padding: 0.3rem 5rem;
+        border-radius: 7px;
+        font-size: 20px; 
+    }
+    .used{
+        margin-top: 1rem;
+        padding: 0.2rem 3rem;
+        border-radius: 5rem;
+    }
 }

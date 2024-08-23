@@ -9,6 +9,7 @@ import { faCarrot } from '@fortawesome/free-solid-svg-icons'
 import { faPeopleGroup } from '@fortawesome/free-solid-svg-icons'
 import { useRef } from "react";
 import { useInView } from "framer-motion";
+import Footer from "./Footer";
 
 
 function Section({ children }) {
@@ -115,12 +116,12 @@ export default function About() {
             </p1>
             </div>
            </Col>
-           <Col > <img src={require('./imgs/pic11.jpg')} alt='Group workout' className='guid' /></Col>
+           <Col > <img src={require('./imgs/pic9.jpg')} alt='Group workout' className='guid' /></Col>
             </Row>
         </Container>
     </Section>
       </div>
-            
+       <Footer />
         </div>
     )
 };
